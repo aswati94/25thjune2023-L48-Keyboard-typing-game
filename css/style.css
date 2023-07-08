@@ -25,12 +25,12 @@
 .s_w_custom_space{
     width:  350px !important;
 }
-.s_h33_c{
+/* .s_h33_c{
     background-image:url(../img/2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
-}
+} */
 
 .s_size{
     font-size: 32px;
@@ -47,7 +47,7 @@
     -moz-border-style: outset;
     -webkit-border-style: outset;
     border-width: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: #444343;
     text-align: center;
     border-color: rgb(98 89 89 / 81%);
@@ -56,6 +56,13 @@
     line-height: 15px;
     transition: 5s linear linear;
     }
+
+    .keyboard-key:active{
+        background-color: #007bff !important;
+        transform: translateY(3px);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+      }
+
     .keyboard-key:hover {
         color: #ffffff;
         border-color: rgba(0, 0, 0, 0.813);  
@@ -76,3 +83,4 @@
         border-style: inset;
     }
 
+   
