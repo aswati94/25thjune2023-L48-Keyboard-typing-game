@@ -36,20 +36,39 @@ let saveRegistrationInfo= ()=>{
     console.log(ln);
     window.localStorage.setItem('first_name',fn);
     window.localStorage.setItem('last_name',ln);
+    // To reload Page in JavaScript
+    window.location.reload();
+}
+
+let logout= ()=>{
+    // To clear/Logout Page in JavaScript
+    window.localStorage.clear();
+    // To reload Page in JavaScript
+    window.location.reload();
+
 }
 
 //    ()(); IIFE 
 (()=>{
+    let fn = window.localStorage.getItem('first_name');
+    let ln = window.localStorage.getItem('last_name');
     console.log('Page Loaded Successfully');
     //Get a reference to the modal element
     var modal = document.getElementById('registrationModal');
+
     //create a Bootstrap modal instance using the modal element
-    var modalInstance = new Bootstrap.Modal(modal);
+    var modalInstance = new bootstrap.Modal(modal);
+    
     //call the 'show' method on the modal instance to launch the modal
-    console.log(window.localStorage.getItem('first_name'));
-    if(window.localStorage.getItem('first_name') === null && window.localStorage.getItem('first_name') === ''){
-    }else{
+    console.log(fn);
+    if(fn === null){
+        //True
         modalInstance.show();
     }
-    
+
+    //check if the local storage is set or not
+    if(fn !== null){
+        document.querySelector('.s_welcome').innerHTML = 'Welcome '+ fn + " "+ln+'<button class="btn btn-sm btn-danger ms-4" onclick="logout()">Logout</button>';
+    }
+
 })();

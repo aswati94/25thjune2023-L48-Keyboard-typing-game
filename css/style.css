@@ -1,20 +1,26 @@
-/* .s_tbdr{
+.s_tbdr{
     border: 1px dashed #000;
 }
 
 .s_mysection{
     border: 10px solid #0dcaf0 !important;
+    height: 600px !important;
 
-} */
-
-.h_33{
-    height: 145px;
 }
 
+/* row1-col1 */
+.s_size{
+    font-size: 24px;
+    height: 100px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+/* row1-col2 */
 .s_keyboard {
-    min-height: 170px;
+    min-height: 150px;
     overflow: hidden;
-    height: 300px;
+    height: 295px;
 }
 .s_bg {
     background-color: #555353;
@@ -25,17 +31,6 @@
 .s_w_custom_space{
     width:  350px !important;
 }
-/* .s_h33_c{
-    background-image:url(../img/2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom;
-} */
-
-.s_size{
-    font-size: 32px;
-}
-
 .keyboard-key{
     margin-right: 5px;
     width: 55px;
@@ -83,4 +78,20 @@
         border-style: inset;
     }
 
-   
+    /* row1-col3 */
+    .s_hand_hght{
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 10px;
+    }
+
+
+    .s_circle{
+        width: 25px;
+        height: 25px;
+    }
+
+    .s_left_pinky{
+        left: 215px;
+        top: 90px;
+    }
